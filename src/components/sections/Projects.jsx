@@ -1,4 +1,3 @@
-import { Key } from "@mui/icons-material"
 import { RevealOnScroll } from "../RevealOnScroll"
 
 export const Projects = () => {
@@ -6,17 +5,14 @@ export const Projects = () => {
         <section id="projects" className="min-h-screen flex items-center justify-center py-20">
             <RevealOnScroll>
                 <div className="max-w-5xl mx-auto px-4 flex flex-col items-center">
-                    
-                    {/* Section Title */}
                     <h2 className="text-3xl font-bold mb-8 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent text-center"> 
                         Featured Projects
                     </h2>
 
-                    {/* Projects Grid (Centered) */}
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6 justify-center">
-                        
-                        {/* AI Chatbot Project */}
-                        <div className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59,130,2246,0.2)] transition">
+
+                        {/* AI Chatbot */}
+                        <div className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition">
                             <h3 className="text-xl font-bold mb-2">AI Chatbot</h3>
                             <p className="text-gray-400 mb-4">
                                 Developed an interactive AI chatbot that responds to users in real-time using Amazon Bedrock, AWS Amplify, and React.
@@ -32,17 +28,22 @@ export const Projects = () => {
                                 ))}
                             </div>
                             <div className="flex justify-between items-center">
-                                <a href="https://master.d1udfopqcaa00y.amplifyapp.com/" className="text-blue-400 hover:text-blue-300 transition-colors my-4" target="_blank"> 
+                                <a 
+                                    href="https://master.d1udfopqcaa00y.amplifyapp.com/" 
+                                    className="text-blue-400 hover:text-blue-300 transition-colors my-4" 
+                                    target="_blank"
+                                    rel="noreferrer"
+                                >
                                     View Project
                                 </a>
                             </div>
                         </div>
 
-                        {/* AutoGlow Detailing Project */}
-                        <div className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59,130,2246,0.2)] transition">
+                        {/* Autoglow Detailing */}
+                        <div className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition">
                             <h3 className="text-xl font-bold mb-2">AutoGlow Detailing</h3>
                             <p className="text-gray-400 mb-4">
-                                A responsive landing page built for a fictional car detailing business using modern design techniques and Tailwind CSS.
+                                A responsive landing page for a fictional car detailing business, showcasing clean UI and mobile-friendly design using React and Tailwind CSS.
                             </p>
                             <div className="flex flex-wrap gap-2 mb-4">
                                 {["React", "Tailwind CSS"].map((tech, key) => (
@@ -55,7 +56,12 @@ export const Projects = () => {
                                 ))}
                             </div>
                             <div className="flex justify-between items-center">
-                                <a href="https://autoglow-detailing-qcq60r8po-guutaas-projects.vercel.app/" className="text-blue-400 hover:text-blue-300 transition-colors my-4" target="_blank"> 
+                                <a 
+                                    href="https://autoglow-detailing.vercel.app/" 
+                                    className="text-blue-400 hover:text-blue-300 transition-colors my-4" 
+                                    target="_blank"
+                                    rel="noreferrer"
+                                >
                                     View Project
                                 </a>
                             </div>
